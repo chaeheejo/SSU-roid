@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@color/colorDarkBlue"
+            android:textColor="@color/colorWhite"
+            android:text="Place"
+            android:id="@+id/place"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:text="Home"
+            android:id="@+id/home"/>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="60dp"
+            android:layout_weight="1"
+            android:background="@color/colorWhite"
+            android:text="Book"
+            android:id="@+id/book"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/favorite_btn"
+        android:layout_width="377dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginBottom="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@color/colorDarkBlue"
+        android:textColor="@color/colorWhite"
+        android:text="나의 즐겨찾기" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editTextFilter"
+        android:inputType="text"
+        android:hint="장소명을 입력하세요."/>
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/editTextFilter"
+        android:textFilterEnabled="true"
+        android:id="@+id/listview1"/>
+
+
+</LinearLayout>
